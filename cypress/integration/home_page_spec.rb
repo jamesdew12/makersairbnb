@@ -50,10 +50,5 @@ it("signs up a new user and takes you to listings page", function(){
   cy.url().should('eq', 'http://localhost:3000/listings')
 
   })
-it("takes you to login page if you want to login", function(){
-  cy.visit('localhost:3000')
-  cy.get("p").find(Login)
-  cy.click()
 
-  })
 });
